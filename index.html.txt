@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecuroServ PRO</title>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+<style>
+* {margin:0;padding:0;box-sizing:border-box;}
+
+html {scroll-behavior:smooth;}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background:#0a0f1c;
+  color:white;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  background:#000;
+  position:sticky;
+  top:0;
+}
+
+nav h2 {color:#00ffcc;}
+nav a {color:white;margin:0 10px;text-decoration:none;}
+
+header {
+  text-align:center;
+  padding:100px 20px;
+  background: radial-gradient(circle,#001f3f,#000);
+}
+
+h1 {font-size:3em;color:#00ffcc;}
+
+.btn {
+  background:#00ffcc;
+  padding:12px 25px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:15px;
+  transition:0.3s;
+}
+
+.btn:hover {
+  background:#00ccaa;
+}
+
+section {
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#111827;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-10px);
+  box-shadow:0 0 30px #00ffcc88;
+}
+
+.pricing {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.price {
+  border:1px solid #00ffcc;
+  padding:20px;
+  border-radius:10px;
+}
+
+form input, form textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+footer {
+  text-align:center;
+  padding:20px;
+  background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>SecuroServ</h2>
+  <div>
+    <a href="#">Inicio</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#planes">Planes</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<header>
+  <h1>SecuroServ</h1>
+  <p>Protección total para tu mundo digital</p>
+  <button class="btn" onclick="scrollToContact()">Contratar ahora</button>
+</header>
+
+<!-- SOBRE NOSOTROS -->
+<section id="sobre" data-aos="fade-up">
+  <h2>Sobre Nosotros</h2>
+  <p><strong>Visión:</strong> Ser una empresa líder en seguridad, brindando confianza y protección.</p>
+  <p><strong>Misión:</strong> Ofrecer soluciones eficientes adaptadas a cada cliente.</p>
+  <p><strong>Valores:</strong> Responsabilidad, confianza, innovación, compromiso y calidad.</p>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" data-aos="fade-up">
+  <h2>Servicios</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Seguridad informática</h3>
+      <p>Protección contra hackeos y amenazas digitales</p>
+    </div>
+    <div class="card">
+      <h3>Seguridad de red</h3>
+      <p>Redes protegidas y monitoreadas</p>
+    </div>
+    <div class="card">
+      <h3>Seguridad física inteligente</h3>
+      <p>Cámaras, alarmas y vigilancia</p>
+    </div>
+    <div class="card">
+      <h3>Protección empresarial</h3>
+      <p>Seguridad para empresas y empleados</p>
+    </div>
+    <div class="card">
+      <h3>Soporte técnico</h3>
+      <p>Asistencia profesional especializada</p>
+    </div>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section id="planes" data-aos="fade-up">
+  <h2>Planes</h2>
+  <div class="pricing">
+
+    <div class="price">
+      <h3>Básico - RD$3,500</h3>
+      <ul>
+        <li>VPN privada</li>
+        <li>Correo seguro</li>
+        <li>Protección básica</li>
+      </ul>
+      <button class="btn" onclick="scrollToContact()">Contratar</button>
+    </div>
+
+    <div class="price">
+      <h3>Avanzado - RD$9,000</h3>
+      <ul>
+        <li>Monitoreo de red</li>
+        <li>Protección avanzada</li>
+        <li>Soporte prioritario</li>
+      </ul>
+      <button class="btn" onclick="scrollToContact()">Contratar</button>
+    </div>
+
+    <div class="price">
+      <h3>Premium - RD$18,000</h3>
+      <ul>
+        <li>Videovigilancia</li>
+        <li>Monitoreo 24/7</li>
+        <li>Protección completa</li>
+      </ul>
+      <button class="btn" onclick="scrollToContact()">Contratar</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- BENEFICIOS -->
+<section data-aos="fade-up">
+  <h2>Beneficios</h2>
+  <ul>
+    <li>Protección contra hackeos</li>
+    <li>Seguridad de datos</li>
+    <li>Soluciones modernas</li>
+    <li>Soporte profesional</li>
+  </ul>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" data-aos="fade-up">
+  <h2>Contacto</h2>
+  <p>Email: kxrn@gmail.com</p>
+
+  <form onsubmit="enviar(event)">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Mensaje"></textarea>
+    <button class="btn">Enviar</button>
+  </form>
+</section>
+
+<!-- WhatsApp -->
+<a href="https://wa.me/18293792671?text=Hola%20quiero%20información"
+target="_blank"
+style="position:fixed;bottom:20px;right:20px;background:#25D366;
+color:white;padding:15px;border-radius:50%;font-size:20px;">
+💬
+</a>
+
+<footer>
+  <p>© 2026 SecuroServ</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+
+function enviar(e){
+  e.preventDefault();
+  alert("Mensaje enviado correctamente ✅");
+}
+
+function scrollToContact(){
+  document.getElementById("contacto").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
